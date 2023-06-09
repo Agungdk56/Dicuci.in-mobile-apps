@@ -1,7 +1,6 @@
-import 'package:dicuciin_1/screen/home_screen.dart';
-import 'package:dicuciin_1/screen/login_screen.dart';
 import 'package:dicuciin_1/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(const Myapp());
 
@@ -10,9 +9,10 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
+      home: const SplashScreen(),
     );
   }
 }
